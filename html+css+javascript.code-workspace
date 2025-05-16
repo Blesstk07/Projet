@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../html+css+javascript"
+		},
+		{
+			"path": "../Projet V2"
+		},
+		{
+			"path": "../Projet V3"
+		},
+		{
+			"path": "../Cours"
+		},
+		{
+			"path": "../Projet"
+		},
+		{
+			"path": "../Mon premier site web"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Site Web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Site Web"
+	}
+}

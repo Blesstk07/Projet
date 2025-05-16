@@ -1,0 +1,184 @@
+/* ====== Style général ====== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de base */
+    background: #f8f8f8; /* Fond clair doux pour le mode clair */
+    color: #333; /* Texte sombre pour une bonne lisibilité */
+    margin: 0; /* Suppression des marges par défaut */
+    padding: 0; /* Suppression du padding par défaut */
+    font-size: 16px; /* Taille de texte confortable */
+    padding-top: 60px; /* Espacement pour la barre de navigation */
+}
+
+/* ====== Barre de navigation ====== */
+.navbar {
+    background-color: #1a1a1a; /* Fond noir doux pour la navbar */
+    padding: 12px 30px; /* Espacement autour des éléments de la navbar */
+    display: flex; /* Flexbox pour la disposition des éléments */
+    flex-direction: column; /* Alignement vertical des éléments */
+    align-items: center; /* Centrer les éléments */
+    justify-content: center; /* Centrer verticalement */
+    border-bottom: 3px solid #f39c12; /* Bordure orange pour un accent visuel */
+    position: fixed; /* Position fixe en haut de la page */
+    top: 0;
+    width: 100%; /* La navbar occupe toute la largeur */
+    z-index: 1000; /* S'assurer qu'elle soit au-dessus des autres éléments */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}
+
+/* Logo et nom de l'école */
+.logo {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.logo img {
+    height: 50px; /* Taille du logo */
+}
+
+.logo h1 {
+    color: #f39c12; /* Texte orange pour le nom de l'école */
+    font-size: 1.8em; /* Taille du texte */
+    margin: 0; /* Enlever la marge */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Liens de navigation */
+.nav-links {
+    list-style: none; /* Enlever les puces */
+    display: flex;
+    gap: 25px; /* Espacement entre les liens */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centrer horizontalement */
+}
+
+.nav-links li a {
+    color: #fff; /* Liens blancs */
+    text-decoration: none; /* Enlever le soulignement */
+    padding: 10px 15px;
+    border-radius: 25px; /* Coins arrondis */
+    transition: all 0.3s ease; /* Transition fluide */
+}
+
+.nav-links li a:hover {
+    background-color: #f39c12; /* Fond orange au survol */
+    color: #1a1a1a; /* Texte noir au survol */
+}
+
+/* ====== Section principale ====== */
+.main-content {
+    padding: 60px 20px; /* Espacement autour du contenu principal */
+    max-width: 1000px;
+    margin: auto; /* Centrer le contenu */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Titre de la section principale */
+.main-content h2 {
+    color: #f39c12; /* Titre en orange */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* ====== Formulaire ====== */
+form {
+    background: #ffffff; /* Fond blanc pour le formulaire */
+    padding: 40px;
+    margin: 40px auto; /* Espacement autour du formulaire et centrage */
+    max-width: 700px;
+    border-radius: 15px; /* Coins arrondis pour un aspect doux */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Ombre légère pour ajouter de la profondeur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels des champs */
+form label {
+    display: block;
+    margin-top: 15px; /* Espacement au-dessus des labels */
+    font-weight: bold;
+    color: #333; /* Texte sombre pour les labels */
+}
+
+/* Champs de saisie */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="file"] {
+    width: 80%; /* Largeur des champs */
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #f39c12; /* Bordure orange autour des champs */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Fond clair pour les champs */
+    color: #333;
+    text-align: center; /* Centrer le texte dans les champs */
+    font-size: 1em; /* Taille de la police des champs */
+    transition: border-color 0.3s ease; /* Transition pour la bordure */
+}
+
+/* Changer la bordure au focus */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form input[type="tel"]:focus,
+form input[type="file"]:focus {
+    border-color: #e67e22; /* Bordure orange foncé au focus */
+    outline: none; /* Supprimer le contour par défaut */
+}
+
+/* Bouton de soumission */
+form input[type="submit"] {
+    margin-top: 20px;
+    background-color: #f39c12; /* Fond orange pour le bouton */
+    color: #fff; /* Texte blanc */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+form input[type="submit"]:hover {
+    background-color: #e67e22; /* Fond orange foncé au survol */
+}
+
+/* ====== Section Contact ====== */
+#contact {
+    background-color: #f5f5f5; /* Fond gris clair */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Titre de la section Contact */
+#contact h2 {
+    color: #f39c12; /* Titre en orange */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+/* ====== Pied de page ====== */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #1a1a1a; /* Fond sombre pour le pied de page */
+    color: #fff; /* Texte blanc */
+    margin-top: 60px; /* Espacement au-dessus du pied de page */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Ajustements pour les liens dans le pied de page */
+footer a {
+    color: #f39c12; /* Liens en orange */
+    text-decoration: none;
+    font-weight: normal; /* Normaliser le poids du texte */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Souligner les liens au survol */
+}

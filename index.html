@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>École Saint Dominique Savio</title>
+  <link rel="stylesheet" href="css/styl.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+  <!-- ✅ Barre de navigation principale -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/120.jpg" alt="Logo École Savio" />
+      <h1>École Saint Dominique Savio</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#apropos"><i class='bx bx-info-circle'></i> À propos</a></li>
+      <li><a href="#inscription"><i class='bx bx-edit'></i> Inscriptions</a></li>
+      <li><a href="#contact" class="cta-nav"><i class='bx bx-envelope'></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Section À propos - Présentation de l'école -->
+  <section id="apropos" class="main-content">
+    <h2>Bienvenue à l'École Primaire Catholique Saint Dominique Savio</h2>
+    <p>
+      Située au cœur de Kinshasa, dans la commune de Mont-Ngafula, notre école accueille les enfants dès le cycle maternel jusqu'au cycle primaire.  
+      Elle est connue pour son engagement à offrir une formation complète : intellectuelle, humaine et spirituelle.
+    </p>
+    <p>
+      Nous mettons un point d’honneur à accompagner chaque élève selon ses talents, en favorisant un climat de confiance, d’écoute et de respect.  
+      L’enseignement est dispensé par une équipe éducative compétente, dévouée et inspirée des principes éducatifs chrétiens.
+    </p>
+    <p>
+      <strong>Notre vision :</strong>  
+      Être une école de référence qui forme des leaders chrétiens, compétents, responsables et conscients de leur rôle dans la société.
+    </p>
+    <p>
+      <strong>Nos valeurs fondamentales :</strong><br>
+      <ul>
+        <li>🎉 Joie :</strong> Vivre et apprendre dans un climat serein, où l’enfant s’épanouit pleinement.</li><br>
+        <li>🙏 Piété :</strong> Développer une vie spirituelle fondée sur la foi chrétienne, à travers la prière, la messe et l’éducation morale.</li><br>
+        <li>💼 Travail :</strong> Cultiver le goût de l’effort, le sens des responsabilités et l’excellence académique.</li>
+      </ul>
+    </p>
+  </section>
+
+  <!-- ✅ Section Formulaire d'inscription -->
+  <section id="inscription">
+    <form>
+      <fieldset>
+        <legend>Formulaire d’inscription</legend>
+
+        <!-- Informations de l'élève -->
+        <label for="nom">Nom de l'enfant :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="postnom">Postnom de l'enfant :</label>
+        <input type="text" id="postnom" name="postnom" required>
+
+        <label for="prenom">Prénom de l'enfant :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="image">Photo de l'enfant :</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance" required>
+
+        <label for="lieu_naissance">Lieu de naissance :</label>
+        <input type="text" id="lieu_naissance" name="lieu_naissance" required>
+
+        <label for="piece_identite">Pièce d'identité des parents :</label>
+        <input type="file" id="piece_identite" name="piece_identite" accept="image/*" required>
+
+        <hr>
+
+        <!-- Informations du tuteur -->
+        <h3>Informations sur le tuteur</h3>
+
+        <label for="tuteur_nom">Nom complet du tuteur :</label>
+        <input type="text" id="tuteur_nom" name="tuteur_nom" required>
+
+        <label for="tuteur_relation">Relation avec l'enfant :</label>
+        <input type="text" id="tuteur_relation" name="tuteur_relation" required>
+
+        <label for="tuteur_telephone">Numéro de téléphone :</label>
+        <input type="tel" id="tuteur_telephone" name="tuteur_telephone" required>
+
+        <label for="tuteur_email">Email :</label>
+        <input type="email" id="tuteur_email" name="tuteur_email" required>
+
+        <input type="submit" value="Soumettre la demande">
+      </fieldset>
+    </form>
+  </section>
+
+  <!-- ✅ Section Contact avec lien Google Maps -->
+  <section id="contact" class="contact-section" style="padding: 40px; background-color: #fff;">
+    <h2 style="text-align:center;">📞 Contactez-nous</h2>
+    <p style="text-align:center; max-width: 700px; margin: auto;">
+      Pour toute information supplémentaire, contactez-nous par téléphone ou visitez nos locaux.
+    </p>
+    <div style="max-width: 700px; margin: 30px auto; text-align: center;">
+      <p><i class='bx bx-phone'></i> Téléphone : <strong>+243 991159094</strong></p>
+      <p><i class='bx bx-map'></i> Adresse : <strong>Av. de l’Église nº3, Q/Don Bosco, Mont-Ngafula, Kinshasa</strong></p>
+      <p><i class='bx bx-navigation'></i> <strong><a href="https://maps.app.goo.gl/pRSM4rofARa63wuv6?g_st=aw" target="_blank">Voir notre localisation sur Google Maps</a></strong></p>
+    </div>
+  </section>
+
+  <!-- ✅ Pied de page -->
+  <footer>
+    <p>&copy; 2025 École Saint Dominique Savio - Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
